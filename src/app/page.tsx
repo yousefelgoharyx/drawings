@@ -1,91 +1,39 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
+import ReactIcon from "@/icons/React";
+import styles from "./page.module.css";
+import DrawingItem from "@/ui/DrawingItem/DrawingItem";
+import DatabaseIcon from "@/icons/Database";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
+      <h1>Welcome to Drawy</h1>
+      <p>Drawy is a collection of drawings that explain concepts in computer</p>
+      <div className={styles.drawingsGrid}>
+        {/* <DrawingItem
+          title="React SSR"
+          description="SSR is short for Server Side Rendering. It is a technique for rendering a web page on the server instead of the client. This is useful for SEO and performance."
+          icon={<ReactIcon size={64} />}
+          to="/react-ssr"
+        /> */}
+
+        <DrawingItem
+          title="ACID"
+          description="ACID is an acronym for Atomicity, Consistency, Isolation, and Durability. These are the four properties of a transaction that guarantee data integrity."
+          icon={<DatabaseIcon size={64} />}
+          to="/acid"
+        />
+      </div>
+      <footer className={styles.footer}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
+          Made with <span className={styles.heart}>❤</span> by{" "}
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://twitter.com/vecsai"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            @vecsai
           </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        </p>
+      </footer>
     </main>
-  )
+  );
 }
