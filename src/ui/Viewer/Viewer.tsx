@@ -17,7 +17,12 @@ const Viewer = (props: Props) => {
             <Image
               key={index}
               src={image}
-              style={{ width: "100%", height: "auto" }}
+              style={{
+                width: "100%",
+                height: "auto",
+                backgroundColor: "#222",
+                borderRadius: 16,
+              }}
               alt={`${props.title} ${index}`}
             />
           );
