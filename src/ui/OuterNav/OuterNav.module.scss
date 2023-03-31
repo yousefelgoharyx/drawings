@@ -2,16 +2,21 @@
   font-size: 0;
   background: none;
   border: none;
-  position: absolute;
-  left: 0;
   cursor: pointer;
-  margin-right: auto;
+  width: 32px;
+  height: 32px;
 }
 
 .nav {
   display: flex;
   position: relative;
   align-self: stretch;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.hidden {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
 }

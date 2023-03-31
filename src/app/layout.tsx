@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" style={montserrat.style}>
+    <html lang="en" className={montserrat.className}>
       <body>{children}</body>
     </html>
   );

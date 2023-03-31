@@ -12,15 +12,19 @@ const OuterNav = (props: OuterNavProps) => {
   const router = useRouter();
   return (
     <nav className={styles.nav}>
-      {props.withBack && (
+      {props.withBack ? (
         <button className={styles.back} onClick={router.back}>
           <BackIcon />
         </button>
+      ) : (
+        <div className={styles.hidden}></div>
       )}
       <div>
         <h1>{props.title}</h1>
         <p>{props.subtitle}</p>
       </div>
+
+      <div className={styles.hidden}></div>
     </nav>
   );
 };
