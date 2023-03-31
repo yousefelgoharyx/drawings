@@ -1,0 +1,17 @@
+.back {
+  font-size: 0;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+}

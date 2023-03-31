@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./DrawingItem.module.css";
+import styles from "./DrawingItem.module.scss";
 import Link from "next/link";
 type DrawingItemProps = {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   to: string;
 };
 const DrawingItem = (props: DrawingItemProps) => {

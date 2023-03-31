@@ -1,0 +1,48 @@
+.drawingItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 16px;
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0 0 0 2px #333;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+  p {
+    font-size: 1rem;
+    color: #999;
+    text-align: center;
+    line-height: 24px;
+    overflow: hidden;
+    height: 96px;
+  }
+  a {
+    align-self: stretch;
+    width: 100%;
+  }
+  button {
+    margin-top: 16px;
+    width: 100%;
+    border: none;
+    background-color: #333;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: #555;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}

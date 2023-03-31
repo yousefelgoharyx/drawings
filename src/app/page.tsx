@@ -1,27 +1,31 @@
 import ReactIcon from "@/icons/React";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import DrawingItem from "@/ui/DrawingItem/DrawingItem";
 import DatabaseIcon from "@/icons/Database";
+import Grid from "@/ui/Grid/Grid";
+import OuterNav from "@/ui/OuterNav/OuterNav";
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1>Welcome to Drawy</h1>
-      <p>Drawy is a collection of drawings that explain concepts in computer</p>
-      <div className={styles.drawingsGrid}>
-        {/* <DrawingItem
-          title="React SSR"
-          description="SSR is short for Server Side Rendering. It is a technique for rendering a web page on the server instead of the client. This is useful for SEO and performance."
+    <main>
+      <OuterNav
+        title="VecDraws"
+        subtitle="A collection of drawings that explain concepts in computer science."
+      />
+      <Grid>
+        <DrawingItem
+          title="Rendering Teqhniques"
+          description="Learn about the various ways and enviroments React can render your app."
           icon={<ReactIcon size={64} />}
-          to="/react-ssr"
-        /> */}
+          to="/react-rendering"
+        />
 
         <DrawingItem
-          title="ACID"
-          description="ACID is an acronym for Atomicity, Consistency, Isolation, and Durability. These are the four properties of a transaction that guarantee data integrity."
+          title="ACID: DB features"
+          description="The four properties of a database transactions that guarantee data integrity."
           icon={<DatabaseIcon size={64} />}
           to="/acid"
         />
-      </div>
+      </Grid>
       <footer className={styles.footer}>
         <p>
           Made with <span className={styles.heart}>❤</span> by{" "}
