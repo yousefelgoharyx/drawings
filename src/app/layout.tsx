@@ -8,7 +8,7 @@ const montserrat = Poppins({
 });
 
 export const metadata = {
-  title: "Vecdraws",
+  title: "VecDraws",
   description:
     "A collection of drawings that explain concepts in computer science.",
 };

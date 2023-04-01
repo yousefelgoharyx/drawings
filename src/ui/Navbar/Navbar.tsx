@@ -12,10 +12,6 @@ const Navbar = ({ title }: { title: string }) => {
         <BackIcon />
       </button>
       <h2>{title}</h2>
-
-      <button className={styles.pdf}>
-        <PDFIcon />
-      </button>
     </nav>
   );
 };

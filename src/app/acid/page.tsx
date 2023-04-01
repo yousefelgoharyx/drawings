@@ -1,6 +1,7 @@
 import DrawingItem from "@/ui/DrawingItem/DrawingItem";
 import Grid from "@/ui/Grid/Grid";
 import OuterNav from "@/ui/OuterNav/OuterNav";
+
 const Page = () => {
   return (
     <main>
@@ -8,6 +9,7 @@ const Page = () => {
         title="ACID: DB Properties"
         subtitle="Learn about the different properties of a database."
         withBack
+        pdfLink="/acid/acid.pdf"
       />
       <Grid>
         <DrawingItem

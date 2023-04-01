@@ -3,10 +3,12 @@ import BackIcon from "@/icons/BackIcon";
 import { useRouter } from "next/navigation";
 import React from "react";
 import styles from "./OuterNav.module.scss";
+import PDFIcon from "@/icons/PDFIcon";
 type OuterNavProps = {
   title: string;
   subtitle: string;
   withBack?: boolean;
+  pdfLink?: string;
 };
 const OuterNav = (props: OuterNavProps) => {
   const router = useRouter();
@@ -24,7 +26,13 @@ const OuterNav = (props: OuterNavProps) => {
         <p>{props.subtitle}</p>
       </div>
 
-      <div className={styles.hidden}></div>
+      {props.pdfLink ? (
+        <a className={styles.back} download href={props.pdfLink}>
+          <PDFIcon />
+        </a>
+      ) : (
+        <div className={styles.hidden}></div>
+      )}
     </nav>
   );
 };

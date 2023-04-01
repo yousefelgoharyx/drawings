@@ -1,6 +1,7 @@
 import DrawingItem from "@/ui/DrawingItem/DrawingItem";
 import Grid from "@/ui/Grid/Grid";
 import OuterNav from "@/ui/OuterNav/OuterNav";
+
 const Page = () => {
   return (
     <main>

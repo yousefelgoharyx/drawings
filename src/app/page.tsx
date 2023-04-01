@@ -4,6 +4,8 @@ import DrawingItem from "@/ui/DrawingItem/DrawingItem";
 import DatabaseIcon from "@/icons/Database";
 import Grid from "@/ui/Grid/Grid";
 import OuterNav from "@/ui/OuterNav/OuterNav";
+import JsIcon from "@/icons/Js";
+
 export default function Home() {
   return (
     <main>
@@ -24,6 +26,13 @@ export default function Home() {
           description="The four properties of a database transactions that guarantee data integrity."
           icon={<DatabaseIcon size={64} />}
           to="/acid"
+        />
+        <DrawingItem
+          title="JS Event Loop"
+          description="Javascript is a single threaded language, but it can do a lot of things at once. How?"
+          icon={<JsIcon size={64} />}
+          to="/acid"
+          soon
         />
       </Grid>
       <footer className={styles.footer}>

@@ -8,7 +8,7 @@
   border-radius: 16px;
   transition: box-shadow 0.3s ease-in-out;
   width: 100%;
-
+  position: relative;
   &:hover {
     box-shadow: 0 0 0 2px #333;
   }
@@ -47,4 +47,27 @@
       transform: scale(0.98);
     }
   }
+}
+
+.soon {
+  cursor: not-allowed;
+  opacity: 0.5;
+  &:hover {
+    box-shadow: none;
+  }
+  * {
+    pointer-events: none;
+  }
+}
+
+.soonBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 0 8px 0 8px;
+  font-size: 0.8rem;
+  z-index: 8;
 }

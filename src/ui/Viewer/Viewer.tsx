@@ -21,7 +21,6 @@ const Viewer = (props: Props) => {
                 width: "100%",
                 height: "auto",
                 backgroundColor: "#222",
-                borderRadius: 16,
               }}
               alt={`${props.title} ${index}`}
             />
