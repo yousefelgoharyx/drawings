@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import styles from "./OuterNav.module.scss";
 import PDFIcon from "@/icons/PDFIcon";
+import Link from "next/link";
 type OuterNavProps = {
   title: string;
   subtitle: string;
@@ -27,9 +28,14 @@ const OuterNav = (props: OuterNavProps) => {
       </div>
 
       {props.pdfLink ? (
-        <a className={styles.back} download href={props.pdfLink}>
+        <Link
+          className={styles.back}
+          download
+          href={props.pdfLink}
+          target="_blank"
+        >
           <PDFIcon />
-        </a>
+        </Link>
       ) : (
         <div className={styles.hidden}></div>
       )}
