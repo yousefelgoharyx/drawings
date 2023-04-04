@@ -14,7 +14,6 @@
   }
   h2 {
     font-size: 1.2rem;
-    margin-top: 16px;
     margin-bottom: 4px;
   }
   p {
@@ -23,7 +22,7 @@
     text-align: center;
     line-height: 24px;
     overflow: hidden;
-    height: 96px;
+    max-height: 96px;
   }
   a {
     align-self: stretch;

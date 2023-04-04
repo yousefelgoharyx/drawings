@@ -1,7 +1,8 @@
+import Image from "next/image";
 import "./globals.scss";
 import { Poppins } from "next/font/google";
-
-const montserrat = Poppins({
+import logo from "../assets/logo.svg";
+const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin-ext"],
   display: "swap",
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={montserrat.className}>
+    <html lang="en" className={poppins.className}>
       <body>{children}</body>
     </html>
   );

@@ -22,6 +22,13 @@ export default function Home() {
         />
 
         <DrawingItem
+          title="Rendering Basics"
+          description="Learn React basics with simple drawings"
+          icon={<ReactIcon size={64} />}
+          to="/react-basics"
+        />
+
+        <DrawingItem
           title="ACID: DB features"
           description="The four properties of a database transactions that guarantee data integrity."
           icon={<DatabaseIcon size={64} />}
